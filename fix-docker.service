@@ -1,0 +1,13 @@
+[Unit]
+Description=Fix DOCKER_GROUP_ID
+Before=multi-user.target
+After=basic.target
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/sbin/fix-docker.sh
+Type=oneshot
+RemainAfterExit=false
+
+[Install]
+WantedBy=multi-user.target

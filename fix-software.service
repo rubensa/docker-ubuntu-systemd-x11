@@ -1,0 +1,13 @@
+[Unit]
+Description=Fix SOFTWARE_GROUP_ID
+Before=multi-user.target
+After=basic.target
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/sbin/fix-software.sh
+Type=oneshot
+RemainAfterExit=false
+
+[Install]
+WantedBy=multi-user.target

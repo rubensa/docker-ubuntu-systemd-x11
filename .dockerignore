@@ -1,0 +1,6 @@
+# Ignore everything
+**
+
+# Exceptions
+!fix-software.*
+!fix-docker.*
