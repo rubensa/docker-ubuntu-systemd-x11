@@ -299,7 +299,7 @@ docker exec -it \
 
 Once connected...
 
-You can chedk DBUS running command:
+You can check DBUS running command:
 
 ```
 app_name="MY APP NAME" \
