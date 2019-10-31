@@ -195,7 +195,7 @@ prepare_docker_sound_host_sharing() {
   # Sound device (ALSA - Advanced Linux Sound Architecture - support)
   [ -d /dev/snd ] && DEVICES+=" --device /dev/snd"
   # Pulseaudio unix socket (needs XDG_RUNTIME_DIR support)
-  MOUNTS+=" --mount type=bind,source=${XDG_RUNTIME_DIR}/pulse,target=${XDG_RUNTIME_DIR}/pulse:ro,readonly"
+  MOUNTS+=" --mount type=bind,source=${XDG_RUNTIME_DIR}/pulse,target=${XDG_RUNTIME_DIR}/pulse,readonly"
   # https://github.com/TheBiggerGuy/docker-pulseaudio-example/issues/1
   ENV_VARS+=" --env=PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native"
 }
