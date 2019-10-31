@@ -75,7 +75,7 @@ docker build --no-cache \
   .
 ```
 
-Afully customized build with should be like:
+A fully customized build should looks like:
 
 ```
 #!/usr/bin/env bash
@@ -117,9 +117,6 @@ docker build --no-cache \
   ${BUILD_ARGS} \
   .
 ```
-
-
-## Running
 
 ## Running
 
